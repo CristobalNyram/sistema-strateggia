@@ -75,7 +75,7 @@ else
                 <ul class="sidebar-nav">
                     <li>
                         <a href="../principal2.php"><i class="fa fa-edit"></i><span class="sidebar-text">Principal</span></a>
-                    </li>
+                    </li>currencurren
                     <li class="current">
                         <a href="nuevo_estudio.php"><i class="glyph-icon flaticon-forms"></i><span class="sidebar-text">Nuevo Estudio sociolaboral</span></a>
                     </li>
@@ -99,20 +99,20 @@ else
                     <li>
                         <a href="../agregar_usuario.php"><i class="fa fa-user"></i><span class="sidebar-text">Usuarios </span></a>
                     </li>
-                    <li class="current">
-                        <a href="nuevo_estudio.php"><i class="glyph-icon flaticon-forms"></i><span class="sidebar-text">Nuevo Estudio sociolaboral</span></a>
+                    <li class="">
+                        <a href="../estudio/nuevo_estudio.php"><i class="glyph-icon flaticon-forms"></i><span class="sidebar-text">Nuevo Estudio sociolaboral</span></a>
                     </li>
                     <li>
-                        <a href="buscar_estudio.php"><i class="fa fa-search"></i><span class="sidebar-text">Buscar Estudio sociolaboral</span></a>
+                        <a href="../estudio/buscar_estudio.php"><i class="fa fa-search"></i><span class="sidebar-text">Buscar Estudio sociolaboral</span></a>
                     </li>
 
                     <!-- modulo de validacion -->
-                    <li>
+                    <li class="">
                         <a href="../validacion/agregar_validacion_laboral.php"><i class="glyph-icon flaticon-forms"></i><span class="sidebar-text">Nueva validacion laboral</span></a>
 
                     </li>
 
-                    <li>
+                    <li class="current">
                         <a href="../validacion/buscar_validacion_laboral.php"><i class="fa fa-search"></i><span class="sidebar-text">Buscar validacion laboral</span></a>
 
                     </li>
@@ -134,380 +134,70 @@ else
         <!-- BEGIN MAIN CONTENT -->
         <div id="main-content">
             <div class="row">
-                <div class="row">
-                    <form id="form" name="form" method="post" enctype="multipart/form-data">
+                <dicurrentv class="row">
+                        <!-- INCIO DE FOMULARIO -->
+                        <form id="form" name="form" method="post" enctype="multipart/form-data">
+                        <form id="form" name="form" method="post" enctype="multipart/form-data">
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h3><strong>Estudio sociolaboral</strong></h3>
-                                    <h4><strong>Datos personales</strong></h4>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
-                                            <span class="sr-only">0% Complete (success)</span>0%
-                                        </div>
-                                    </div>
+                                    <h3><strong>Buscador de validaciones laborales</strong></h3>
                                 </div>
                                 <div class="panel-body">
-                                    <div class="row" style="margin-bottom: 1em;">
-                                        <div class="form-group">
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Nombre</strong>
-                                                </label>
-                                                <div class="controls">
-                                                    <input name="nombre" id="nombre" type="text" class="form-control">
-                                                    <input name="no_estudio" id="no_estudio" type="hidden" value="estudio1">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Apellido paterno</strong>
-                                                </label>
-                                                <div class="controls">
-                                                    <input name="apellidop" id="apellidop" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Apellido materno</strong>
-                                                </label>
-                                                <div class="controls">
-                                                    <input name="apellidom" id="apellidom" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row" style="margin-bottom: 1em;">
-                                        <div class="form-group">
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Empresa</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <input name="empresa" id="empresa" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Área</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <input name="area" id="area" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Puesto actual</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <input name="puesto" id="puesto" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>E-mail</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <input name="email" id="email" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row" style="margin-bottom: 1em;">
-                                        <div class="form-group">
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Dirección</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <input name="dir_calle" id="dir_calle" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Número de casa</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <input name="dir_num" id="dir_num" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Colonia</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <input name="colonia" id="colonia" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>CP</strong>
-                                                </label>
-                                                <div class="controls">
-                                                    <input name="cp" id="cp" type="text" class="form-control decimal-inputmask" maxlength="5">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row" style="margin-bottom: 1em;">
-                                        <div class="form-group">
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Estado</strong>
-                                                </label>
-                                                <div class="controls">
-                                                     <select id="estado" name="estado" class="form-control" onchange="change_estado()">
-                                                         <option value="" selected="selected">&nbsp;</option>
-                                                             <?php
-                                                             $select = mysqli_query($link, "select * from estados order by id asc");
-                                                                 $row = mysqli_num_rows($select);
-                                                                 if($row > 0)
-                                                                 {
-                                                                     while($arr = mysqli_fetch_array($select))
-                                                                     {
-                                                                         $id     = $arr['id'];
-                                                                         $estado = $arr['estado'];
+                                               <div class="row" style="margin-bottom: 1em;">
+                                                    <div class="form-group">
+                                                              <div class="col-md-3 col-sm-6 col-xs-12">
+                                                                  <label class="form-label">
+                                                                      <strong>Nombre</strong>
+                                                                  </label>
+                                                                  <div class="controls">
+                                                                      <input name="fecha_ini" id="fecha_ini" type="text" class="form-control">
+                                                                  </div>
+                                                              </div>
+                                                              <div class="col-md-3 col-sm-6 col-xs-12">
+                                                                  <label class="form-label">
+                                                                      <strong>Apellido paterno</strong>
+                                                                  </label>
+                                                                  <div class="controls">
+                                                                      <input name="fecha_final" id="fecha_final" type="text" class="form-control">
+                                                                  </div>
+                                                              </div>
 
-                                                                         echo "<option value='$id'>$estado</option>";
-                                                                     }
-                                                                 }
-                                                             ?>
-                                                     </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                               <label class="form-label">
-                                                   <strong>Municipio</strong>
-                                               </label>
-                                               <div class="controls">
-                                                    <select id="municipio" name="municipio" class="form-control"">
-                                                        <option value="">&nbsp;</option>
-                                                    </select>
-                                               </div>
-                                            </div>
-                                        </div>
+                                                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                                                  <label class="form-label">
+                                                                      <strong>Apellido Materno</strong>
+                                                                  </label>
+                                                                  <div class="controls">
+                                                                  <input name="fecha_ini" id="fecha_ini" type="text" class="form-control">
+                                                                  </div>
+                                                               </div>
+
+
+                                                              <div class="col-md-3 col-sm-6 col-xs-12">
+                                                                  <label class="form-label">
+                                                                      <strong>CURP</strong>
+                                                                  </label>
+                                                                  <div class="controls">
+                                                                  <input name="fecha_ini" id="fecha_ini" type="text" class="form-control">
+                                                                  </div>
+                                                               </div>
+                                                    
+                                              </div>
                                     </div>
-                                    <div class="row" style="margin-bottom: 1em;">
-                                        <div class="form-group">
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Teléfono</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <input name="telefono" id="telefono" type="text" class="form-control phone-inputmask">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Celular</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <input name="celular" id="celular" type="text" class="form-control phone-inputmask">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Fecha de nacimiento</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <input name="fecha_nacimiento" id="fecha_nacimiento" type="text" class="form-control" name="fecha_nacimiento" >
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Lugar de nacimiento</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <input name="lugar_nacimiento" id="lugar_nacimiento" type="text" class="form-control" name="lugar_nacimiento" >
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row" style="margin-bottom: 1em;">
-                                        <div class="form-group">
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Tiempo de Radicar en el Domicilio actual</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <input name="tiempo_dom_actual" id="tiempo_dom_actual" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Tiempo de Radicar en el Domicilio anterior</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <input name="tiempo_dom_anterior" id="tiempo_dom_anterior" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row" style="margin-bottom: 1em;">
-                                        <div class="form-group">
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Edad</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <input name="edad" id="edad" type="text" class="form-control age-inputmask" maxlength="2">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>CURP</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <input name="curp" id="curp" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Estado civil</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <select id="estado_civil" name="estado_civil" class="form-control"">
-                                                        <option value="" selected="selected">&nbsp;</option>
-                                                        <option value="Soltero/a">Soltero/a</option>
-                                                        <option value="Casado/a">Casado/a</option>
-                                                        <option value="Viudo/a">Viudo/a</option>
-                                                        <option value="Divorciado/a">Divorciado/a</option>
-                                                        <option value="Unión libre">Unión libre</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Sexo</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <select id="sexo" name="sexo" class="form-control"">
-                                                        <option value="" selected="selected">&nbsp;</option>
-                                                        <option value="Masculino">Masculino</option>
-                                                        <option value="Femenino">Femenino</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row" style="margin-bottom: 1em;">
-                                        <div class="form-group">
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Religion</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <input name="religion" id="religion" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Comprobante domicilio presentado</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <input name="comprobante_dom" id="comprobante_dom" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>IMSS</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <input name="imss" id="imss" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>ID Oficial</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <input name="id_oficial" id="id_oficial" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row" style="margin-bottom: 1em;">
-                                        <div class="form-group">
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>¿Labora algún familiar en la Empresa?</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <select id="familiar" name="familiar" class="form-control"">
-                                                        <option value="" selected="selected">&nbsp;</option>
-                                                        <option value="Si">Si</option>
-                                                        <option value="No">No</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>¿Cómo se enteró de la vacante?</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <input name="vacante" id="vacante" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Dependientes Economicos</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <select id="dependiente" name="dependiente" class="form-control"">
-                                                        <option value="" selected="selected">&nbsp;</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                        <option value="6">6</option>
-                                                        <option value="7">7</option>
-                                                        <option value="8">8</option>
-                                                        <option value="9">9</option>
-                                                        <option value="10">10</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                                
-                                                <label class="form-label">
-                                                <a class="fa fa-facebook-square" href="#"></a>    <strong>ID Facebook</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <input name="facebook" id="facebook" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row" style="margin-bottom: 1em;">
-                                        <div class="form-group">
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Deportes, Aficiones y Entretenimiento</strong>
-                                                </label>
-                                                <textarea id="deportes" name="deportes" class="form-control" rows="3" style="border-radius: 0.5em;"></textarea>
-                                            </div>
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <label class="form-label">
-                                                    <strong>Asociaciones o grupos a los que pertenece</strong>
-                                                </label>
-                                                <div class="controls" >
-                                                    <textarea id="grupos" name="grupos" class="form-control" rows="3" style="border-radius: 0.5em;"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
+      
                                     <div class="row">
                                         <div class="col-md-12 col-sm-12 col-xs-12" style="text-align: center;">
                                             <div class="controls">
-                                                <a class="btn btn-primary btn-rounded" onClick="validar();">Guardar</a>
+                                                <a class="btn btn-primary btn-rounded" onClick="buscar();">Buscar</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>   
-                    </form>
+                        </div>
+                </form>
+                        <!-- FIN DE FORMULARIO -->
                 </div>
             </div>
         </div>

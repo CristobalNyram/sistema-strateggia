@@ -87,7 +87,22 @@ else
                     </li>
                     <li>
                         <a href="estudio/buscar_estudio.php"><i class="fa fa-search"></i><span class="sidebar-text">Buscar Estudio sociolaboral</span></a>
+
                     </li>
+
+                    <!-- modulo de validacion -->
+                    <li>
+                        <a href="./validacion/agregar_validacion_laboral.php"><i class="glyph-icon flaticon-forms"></i><span class="sidebar-text">Nueva validacion laboral</span></a>
+
+                    </li>
+
+                    <li>
+                        <a href="./validacion/buscar_validacion_laboral.php"><i class="fa fa-search"></i><span class="sidebar-text">Buscar validacion laboral</span></a>
+
+                    </li>
+                    <!-- modulo de validicion -->
+
+
                     <li>
                         <a href="kpis/kpis.php"><i class="fa fa-bar-chart-o"></i><span class="sidebar-text">Indicadores</span></a>
                     </li>
