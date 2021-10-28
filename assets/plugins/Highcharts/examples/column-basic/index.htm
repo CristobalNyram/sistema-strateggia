@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">
+$(function () {
+        $('#container').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Fallas Perceptron'
+            },
+            subtitle: {
+                text: ''
+            },
+            xAxis: {
+                categories: [
+                    'Cable',
+                    'Configuracin',
+                    'Repetidor',
+                    'Flexicam',
+                    'Soporte Flexi',
+                    'Mangueras',
+                    'Sist Servidor',
+                    'Sist PC',
+                    'Sensores fijos',
+                    'SW Corrupto',
+                    'Comp daado',
+                    'Scanner SICK',
+			  'UPS',
+			  'Esfera',
+			  'Guitarra',
+			  'Tarjeta PCI'
+                ]
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Cantidad de Refacciones'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [
+			{
+                name: '2012',
+                data: [26,0,3,10,6,8,1,0,0,0,5,3,2,4,2,3],
+		    color: '#FF9500'
+
+    
+            }, 
+			{
+                name: '2013',
+                data: [21,4,3,16,1,12,1,7,6,15,6,2,1,0,0,0],
+		    color: '#007AFF'
+    
+            }
+			]
+        });
+    });
+    
+
+		</script>
+	</head>
+	<body>
+<script src="../../js/highcharts.js"></script>
+<script src="../../js/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	</body>
+</html>
